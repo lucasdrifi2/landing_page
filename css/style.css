@@ -9,8 +9,9 @@ body {
     background-color: #f7f7f7;
     display: grid;
     justify-items: center;
-    gap: 60px;
-    margin-top: 60px;
+    gap: 30px;
+    margin-top: 30px;
+    
 
 }
 
@@ -141,4 +142,41 @@ Estilização das rodape
     text-align: center;
     width: 100%; /* Faz com que o elemento atual fique 100% do tamanho do elemento pai (Você não está utilizando o display.) */
     box-sizing: border-box;
+}
+
+
+
+@media(max-width:599px){
+    .conteudo{
+        max-width: 50px;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .rodape{
+        max-width: auto;
+    }
+    .menu{
+        max-width: 50px;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    h1{
+        text-align: center ;
+    }
+}
+
+
+
+@media(width >=1000px){
+    div{
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+    h1{
+        text-align: center ;
+    }
+    img{
+        
+
+    }
 }
